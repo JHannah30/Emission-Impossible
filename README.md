@@ -29,9 +29,7 @@ A small blog section helps users further their research and frames it in a solut
 
   
 ## Demo
-
-https://youtu.be/417C-d4kePY
-
+https://youtu.be/XyTc3Cmmbrw
   
 ## Tech Stack
 
