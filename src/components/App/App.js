@@ -24,14 +24,6 @@ export default function App() {
   const [from, updateFrom] = useState("");
   const [to, updateTo] = useState("");
 
-  //Processes the form inputs, removing spaces and capitalising the first character
-  // function formatInput(string){
-  //   string = string.toLowerCase().trim().split('');
-  //   string[0] = string[0].toUpperCase();
-  //   let formattedString = string.join('');
-  //   return formattedString;
-  // }
-
   //state for results card
   const [resultsData, updateResultsData] = useState([]);
 
