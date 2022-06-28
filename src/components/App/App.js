@@ -115,9 +115,9 @@ export default function App() {
         {
           vehicle: "flight",
           icon: flightIcon,
-          distance: '- ',
-          carbon: '- ',
-          trees: '- ',
+          distance: 0,
+          carbon: 0,
+          trees: 0,
           // distance: Math.ceil(flightDistance),
           // carbon: Math.ceil(flightDistance * 0.1753),
           // trees: Math.ceil((flightDistance * 0.1753) / 24),
