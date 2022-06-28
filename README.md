@@ -40,12 +40,12 @@ Html
 
 ## Dependencies
 
-Bootstrap
-MaterialUI
-body-scroll-lock
-react-select-sticky
-react-google-places-autocomplete
-react-router
+- Bootstrap
+- MaterialUI
+- body-scroll-lock
+- react-select-sticky
+- react-google-places-autocomplete
+- react-router
   
 ## API Reference
 
