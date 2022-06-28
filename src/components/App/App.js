@@ -66,20 +66,20 @@ export default function App() {
         bikeDistanceData.rows[0].elements[0].distance.value / 1000;
 
       //Flight
-      let flightDistanceResponse = await fetch(
-        `https://distanceto.p.rapidapi.com/get?route=%20%5B%7B%22t%22%3A%22${from}%22%7D%2C%7B%22t%22%3A%22${to}%22%7D%5D&car=false&foot=false`,
-        {
-          method: "GET",
-          headers: {
-            "x-rapidapi-host": "distanceto.p.rapidapi.com",
-            "x-rapidapi-key":
-              "2fa1c0dcdfmshfb82fa2cc944c9ep14832ajsn98e082fa387d",
-          },
-        }
-      );
-      let flightDistanceData = await flightDistanceResponse.json();
-      let flightDistance =
-        flightDistanceData.steps[0].distance.flight[0].distance;
+      // let flightDistanceResponse = await fetch(
+      //   `https://distanceto.p.rapidapi.com/get?route=%20%5B%7B%22t%22%3A%22${from}%22%7D%2C%7B%22t%22%3A%22${to}%22%7D%5D&car=false&foot=false`,
+      //   {
+      //     method: "GET",
+      //     headers: {
+      //       "x-rapidapi-host": "distanceto.p.rapidapi.com",
+      //       "x-rapidapi-key":
+      //         "2fa1c0dcdfmshfb82fa2cc944c9ep14832ajsn98e082fa387d",
+      //     },
+      //   }
+      // );
+      // let flightDistanceData = await flightDistanceResponse.json();
+      // let flightDistance =
+      //   flightDistanceData.steps[0].distance.flight[0].distance;
 
       //Calculations to convert distance into carbon emissions.
       updateResultsData([
@@ -115,9 +115,12 @@ export default function App() {
         {
           vehicle: "flight",
           icon: flightIcon,
-          distance: Math.ceil(flightDistance),
-          carbon: Math.ceil(flightDistance * 0.1753),
-          trees: Math.ceil((flightDistance * 0.1753) / 24),
+          distance: 'unknown',
+          carbon: 'unknown',
+          trees: 'unknown',
+          // distance: Math.ceil(flightDistance),
+          // carbon: Math.ceil(flightDistance * 0.1753),
+          // trees: Math.ceil((flightDistance * 0.1753) / 24),
         },
       ]);
     } catch (err) {
