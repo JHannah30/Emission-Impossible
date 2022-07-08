@@ -1,19 +1,20 @@
 .main-div {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  height: 66vh;
+  max-width: 1200px;
   margin: 20px 0 20px 0;
   padding: 0 5vw 0 5vw;
 }
 
 .hero-item {
   display: flex;
-  flex-direction: column;
   flex-basis: 100%;
   flex: 1;
   justify-content: center;
@@ -21,18 +22,47 @@
 }
 
 .hero-image {
-  height: 60vh;
-  margin-bottom: 10px;
+  max-width: 550px;
+  width: 100%;
 }
 
 .hero-text-section {
   text-align: left;
-  padding: 5% 3% 5% 3%;
+  padding: 20px;
   margin: 1vh 5vw 1vh 10vw;
 }
 
 .hero-text-section h1 {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+.hero-text-section h1 {
+  font-size: 3rem;
+}
+
+.hero-text-section p {
+  font-size: 1.2rem;
+}
+
+.hero-image {
+  max-width: 350px;
+}
+}
+
+@media only screen and (max-width: 875px) {
+  /* Find way to use less media queries after main fixes have been completed */
+  .hero-text-section h1 {
+    font-size: 2.7rem;
+  }
+  
+  .hero-text-section p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-image {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -43,20 +73,13 @@
 
   .hero-flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5vh;
-    margin-bottom: 0;
-    height: 50vh;
-  }
-
-  .hero-image {
-    width: 32vh;
-    height: auto;
+    margin-top: 30px;
   }
 
   .hero-item {
-    height: fit-content;
+    width: 100%;
   }
 
   .hero-text-section {
@@ -65,11 +88,11 @@
     padding: 3%;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .hero-text-section h1 {
+    font-size: 2.5rem;
   }
-
-  .hero-p {
-    font-size: 1.2rem;
+  
+  .hero-text-section p {
+    font-size: 1.1rem;
   }
 }
