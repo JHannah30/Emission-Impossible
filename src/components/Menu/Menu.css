@@ -48,7 +48,9 @@
   margin: 0 10px;
   background-color: white;
   border: none;
+  border-bottom: solid 3px white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-button:hover {
@@ -70,6 +72,7 @@
   border: none;
   border-bottom: solid 3px #1f5657;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-button-active:focus {
@@ -80,30 +83,32 @@
 
   .container-fluid {
     margin: 0 10px; 
+  }  
+
+  .navbar {
+    font-size: 1rem;
   }
-  
 
   .nav-logo {
     height: 40px;
   }
 
   .nav-menu {
-    width: 150px;
-    height: 10vh;
+    width: auto;
+    height: 100%;;
     margin-right: 10px;
   }
 
   .nav-button {
-    width: 80px;
-    height: 8vh;
+    width: auto;
+    height: 100%;
+    padding: 5px;
   }
 
   .nav-button-active {
-    width: 80px;
-    height: 8vh;
+    width: auto;
+    height: 100%;
+    padding: 5px;
   }
 
-  .container-fluid {
-    height: 10vh;
-  }
 }

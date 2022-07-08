@@ -25,16 +25,23 @@ p {
   bottom: 25px;
   float: right;
   margin: 30px;
-  width: 2.5em;
-  height: 2.5em;
+  width: 60px;
+  height: 60px;
   border: none;
   border-radius: 50%;
   background-color: #ff7c5b;
   color: white;
   cursor: pointer;
-  font-size: xx-large;
+  font-size: x-large;
   z-index: 3;
+  transition-duration: 0.3s;
 }
+
+.openModalBtn:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
 .openModalBtn:focus {
   outline: 0;
   border: 0;
@@ -46,14 +53,14 @@ p {
   bottom: 25px;
   float: right;
   margin: 30px;
-  width: 2.5em;
-  height: 2.5em;
+  width: 60px;
+  height: 60px;
   border: none;
   border-radius: 50%;
   background-color: #e85e3b;
   color: white;
   cursor: pointer;
-  font-size: xx-large;
+  font-size: x-large;
   z-index: 4;
 }
 
@@ -81,19 +88,15 @@ p {
   }
 
   .openModalBtn {
-    position: sticky;
-    float: right;
     bottom: 10px;
     margin: 10px;
-    width: 2.5em;
-    height: 2.5em;
-    border: none;
-    border-radius: 50%;
-    background-color: #ff7c5b;
-    color: white;
-    cursor: pointer;
-    font-size: xx-large;
-    z-index: 3;
+    width: 40px;
+    height: 40px;
+  }
+
+  .closeModalBtn {
+    width: 50px;
+    height: 50px;
   }
 }
 
