@@ -29,7 +29,7 @@ A small blog section helps users further their research and frames it in a solut
 
   
 ## Demo
-- Live site: https://emissions-impossible.netlify.app/
+- Live site: https://emission-impossible.netlify.app/
 - Video walkthrough: https://youtu.be/XyTc3Cmmbrw
   
 ## Tech Stack
