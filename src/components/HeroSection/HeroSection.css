@@ -51,6 +51,7 @@
 }
 
 @media only screen and (max-width: 875px) {
+  /* Find way to use less media queries after main fixes have been completed */
   .hero-text-section h1 {
     font-size: 2.7rem;
   }
@@ -62,7 +63,7 @@
   .hero-image {
     max-width: 300px;
   }
-  }
+}
 
 @media only screen and (max-width: 700px) {
   .main-div {
