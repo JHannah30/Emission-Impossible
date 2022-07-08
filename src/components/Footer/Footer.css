@@ -5,8 +5,8 @@
   flex-wrap: wrap;
   width: 100%;
   height: 10%;
-  padding: 20px 10px;
-  margin: 20px 0 20px 0;
+  padding: 40px 10px;
+  margin-top: 80px;
   font-size: 1rem;
   background-color: #E4E4E4;
   color: #2F2E41;
@@ -19,6 +19,10 @@
   align-items: center;
   padding: 0 20px;
   margin: 10px;
+}
+
+.footer-item:last-of-type {
+  padding-bottom: 20px;
 }
 
 .footer-item a {
@@ -36,8 +40,6 @@
 
   .footer-container {
     flex-direction: column;
-    margin: 0;
-    padding: 0;
   }
 
   .footer-item {
