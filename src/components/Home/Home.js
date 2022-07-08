@@ -34,15 +34,16 @@ export default function Home(props) {
           resultsData={props.resultsData}
         />
       ) : null}
-      <button
+      {/* <button
         className={props.openModal ? "closeModalBtn" : "openModalBtn"}
         onClick={() => {
           props.setOpenModal(!props.openModal);
         }}
       >
         ?
-      </button>
-      {props.openModal && <HelpModal closeModal={props.setOpenModal} />}
+      </button> */}
+      {/* {props.openModal && <HelpModal closeModal={props.setOpenModal} />}
+      <Footer /> */}
       <Footer />
     </div>
   );
