@@ -6,7 +6,7 @@ import HeroSection from "../HeroSection/HeroSection";
 import SearchCard from "../SearchCard/SearchCard";
 import LoadingSection from "../LoadingSection/LoadingSection";
 import ResultsSection from "../ResultsSection/ResultsSection";
-import HelpModal from "../HelpModal/HelpModal";
+// import HelpModal from "../HelpModal/HelpModal";
 import Footer from "../Footer/Footer";
 
 export default function Home(props) {

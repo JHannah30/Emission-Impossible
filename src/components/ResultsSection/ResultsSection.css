@@ -5,27 +5,37 @@
   align-items: center;
   width: 100%;
   margin-top: 40px;
+  z-index: -1;
 }
 
-.more-info-button {
+.more-info-section {
   width: 100%;
-  margin-top: 80px;
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: white;
-  border: none;
+  margin: 120px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.more-info-button:hover {
-  color: #ff7c5b;
+.more-info-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 650px;
+  margin: 0 40px;
 }
 
-.more-info-button:focus {
-  outline: none;
+.more-info-title {
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 700px) {
   .results-container {
     margin-top: 20px;
+  }
+
+  .more-info-title {
+    font-size: 1.6rem;
+    text-align: center;
   }
 }
