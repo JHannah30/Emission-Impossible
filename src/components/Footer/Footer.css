@@ -21,10 +21,6 @@
   margin: 10px;
 }
 
-.footer-item:last-of-type {
-  padding-bottom: 20px;
-}
-
 .footer-item a {
   margin-bottom: 5px;
   color: #2F2E41;
@@ -52,5 +48,9 @@
 
   #footer-title {
     width: auto;
+  }
+
+  .footer-item:last-of-type {
+    padding-bottom: 20px;
   }
 }

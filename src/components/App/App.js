@@ -125,7 +125,7 @@ export default function App() {
       ]);
     } catch (err) {
       alert(
-        "Whoops, that didn't work! We couldn't match your search to any locations, please try again! Note: The API key may have exceeded it's limit this month"
+        "Whoops, that didn't work! We couldn't match your search to any locations, please try again!"
       );
       setLoadingComponent(false);
       window.location = "/";
