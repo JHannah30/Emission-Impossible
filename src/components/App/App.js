@@ -125,7 +125,7 @@ export default function App() {
       ]);
     } catch (err) {
       alert(
-        "Oh no! We couldn't match your search to any locations, please try again! HINT: Entering a street or postcode location will help to give you the most accurate results!"
+        "Whoops, that didn't work! We couldn't match your search to any locations, please try again! Note: The API key may have exceeded it's limit this month"
       );
       setLoadingComponent(false);
       window.location = "/";
